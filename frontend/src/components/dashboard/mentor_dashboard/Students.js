@@ -17,8 +17,8 @@ const Students = () => {
       setStudents(response.students);
       setLoading(false);
     } catch (err) {
-      console.error('Error fetching connected students:', err);
-      setError('Failed to fetch connected students');
+      console.error('Error fetching connected Mentee:', err);
+      setError('Failed to fetch connected Mentee');
       setLoading(false);
     }
   };
@@ -28,9 +28,9 @@ const Students = () => {
 
   return (
     <div className="students-container">
-      <h1 className="page-title">Connected Students</h1>
+      <h1 className="page-title">Connected Mentee</h1>
       {students.length === 0 ? (
-        <p className="no-students">No connected students yet</p>
+        <p className="no-students">No connected Mentee yet</p>
       ) : (
         <div className="students-list">
           {students.map((student, index) => (

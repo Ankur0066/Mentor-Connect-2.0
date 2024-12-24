@@ -93,11 +93,11 @@ const InterestedTeachers = () => {
                 <span className="detail-value">{selectedTeacher.highestDegree}</span>
               </div>
               <div className="detail-item">
-                <span className="detail-label">Subject Expertise:</span>
+                <span className="detail-label">Mentoring Expertise:</span>
                 <span className="detail-value">{selectedTeacher.subjectExpertise}</span>
               </div>
               <div className="detail-item">
-                <span className="detail-label">Institute:</span>
+                <span className="detail-label"> current Job role:</span>
                 <span className="detail-value">{selectedTeacher.institute}</span>
               </div>
             </div>

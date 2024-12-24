@@ -18,7 +18,7 @@ const UserProfile = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [profileExists, setProfileExists] = useState(false);
 
-  const levels = ['Class 1', 'Class 2', 'Class 3', 'Class 4', 'Class 5', 'Class 6', 'Class 7', 'Class 8', 'Class 9', 'Class 10', 'Class 11', 'Class 12', 'Bachelors'];
+  const levels = ['Beginner','Intermediate','Expert'];
   const subjects = ['Mathematics', 'Physics', 'Chemistry', 'Biology', 'Computer Science', 'Literature', 'History', 'Geography'];
 
   const selectStyles = {
@@ -144,17 +144,21 @@ const UserProfile = () => {
       <form onSubmit={handleSubmit} className="user-profile-form">
         <h2>{profileExists ? 'Update Your Profile' : 'Complete Your Profile'}</h2>
         
-        <motion.input 
-          whileFocus={{ scale: 1.02 }}
-          type="text" 
-          name="name" 
-          placeholder="Full Name" 
-          value={profile.name} 
-          onChange={handleInputChange} 
-          required 
-        />
+        <label>
+  Full Name
+  <motion.input 
+    whileFocus={{ scale: 1.02 }}
+    type="text" 
+    name="name" 
+    placeholder="Full Name" 
+    value={profile.name} 
+    onChange={handleInputChange} 
+    required 
+  />
+</label>
         {errors.name && <span className="error">{errors.name}</span>}
-        
+        <label>
+          Age
         <motion.input 
           whileFocus={{ scale: 1.02 }}
           type="number" 
@@ -164,8 +168,10 @@ const UserProfile = () => {
           onChange={handleInputChange} 
           required 
         />
+        </label>
         {errors.age && <span className="error">{errors.age}</span>}
-        
+        <label>
+          Experience
         <Select
           options={levels.map(level => ({ value: level, label: level }))}
           value={{ value: profile.currentLevel, label: profile.currentLevel }}
@@ -175,19 +181,25 @@ const UserProfile = () => {
           classNamePrefix="react-select"
           styles={selectStyles}
         />
+        </label>
         {errors.currentLevel && <span className="error">{errors.currentLevel}</span>}
-        
+        <label>
+          <label>
+            Current Organization
         <motion.input 
           whileFocus={{ scale: 1.02 }}
           type="text" 
           name="institution" 
-          placeholder="Current School/University" 
+          placeholder="Current Organization"
           value={profile.institution} 
           onChange={handleInputChange} 
           required 
         />
+        </label>
+        </label>
         {errors.institution && <span className="error">{errors.institution}</span>}
-        
+        <label>
+          Expertise 
         <Select
           options={subjects.map(subject => ({ value: subject, label: subject }))}
           value={profile.interestedSubjects.map(subject => ({ value: subject, label: subject }))}
@@ -198,6 +210,7 @@ const UserProfile = () => {
           styles={selectStyles}
           isMulti
         />
+        </label>
         {errors.interestedSubjects && <span className="error">{errors.interestedSubjects}</span>}
         
         <motion.button 

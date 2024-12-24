@@ -19,7 +19,7 @@ const MenteeDashboardPage = () => {
     { name: 'Calendar', icon: <FaCalendar />, path: '/mentee/dashboard/calendar' },
     { name: 'Notifications', icon: <FaBell />, path: '/mentee/dashboard/notifications' },
     { name: 'Profile', icon: <FaUser />, path: '/mentee/dashboard/userprofile' },
-    { name: 'Teachers', icon: <FaUsers />, path: '/mentee/dashboard/teachers' },
+    { name: 'Mentor', icon: <FaUsers />, path: '/mentee/dashboard/teachers' },
     { name: 'Messages', icon: <FaEnvelope />, path: '/mentee/dashboard/messages' },
   ];
 

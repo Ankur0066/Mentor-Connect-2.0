@@ -24,7 +24,7 @@ exports.createConnectionRequest = async (req, res) => {
     const newNotification = new MentorNotification({
       mentor: mentorId,
       mentee: menteeId,
-      message: "A student has requested to connect with you.",
+      message: "A Mentee has requested to connect with you.",
       activeNotification: true,
       status: 'pending'
     });

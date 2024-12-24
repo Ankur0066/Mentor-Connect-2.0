@@ -17,7 +17,7 @@ const MentorDashboardPage = () => {
   const navItems = [
     { name: 'Stats', icon: <FaChartBar />, path: '/mentor/dashboard' },
     { name: 'Calendar', icon: <FaCalendar />, path: '/mentor/dashboard/calendar' },
-    { name: 'Students', icon: <FaUsers />, path: '/mentor/dashboard/students' },
+    { name: 'Mentee', icon: <FaUsers />, path: '/mentor/dashboard/students' },
     { name: 'Notifications', icon: <FaBell />, path: '/mentor/dashboard/notifications' },
     { name: 'Profile', icon: <FaUser />, path: '/mentor/dashboard/userprofile' },
     { name: 'Messages', icon: <FaEnvelope />, path: '/mentor/dashboard/messages' },

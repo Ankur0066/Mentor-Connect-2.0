@@ -20,15 +20,15 @@ const Stats = () => {
           <p className="stat-value">42</p>
         </div>
         <div className="stat-card">
-          <h3>Subjects Explored</h3>
+          <h3>Topic Explored</h3>
           <p className="stat-value">5</p>
         </div>
         <div className="stat-card">
-          <h3>Assignments Completed</h3>
+          <h3>Registration Completed</h3>
           <p className="stat-value">18</p>
         </div>
         <div className="stat-card">
-          <h3>Average Score</h3>
+          <h3>Average Review</h3>
           <p className="stat-value">85%</p>
         </div>
       </div>
@@ -36,6 +36,14 @@ const Stats = () => {
       <br></br>
 
       <InterestedTeachers />
+      <div>
+      <div class="container">
+    <h1 class="text-center my-4">Simple Blog</h1>
+    <div class="blog-container" id="blog-container">
+     
+    </div>
+  </div>
+</div>
     </div>
   );
 };

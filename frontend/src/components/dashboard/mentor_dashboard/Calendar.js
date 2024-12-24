@@ -64,14 +64,20 @@ const MentorCalendar = () => {
           <button className="schedule-btn" onClick={handleSchedule}>Schedule Class</button>
         </div>
       )}
-      <div className="scheduled-classes">
-        <h3>Upcoming Classes</h3>
-        <ul>
-          {scheduledDates.map((scheduledDate, index) => (
-            <li key={index}>{scheduledDate.toLocaleString()}</li>
-          ))}
-        </ul>
-      </div>
+     <div className="scheduled-classes">
+  <h3>Upcoming Classes</h3>
+  <ul>
+    {scheduledDates.map((scheduledDate, index) => (
+      <li key={index} className="class-item">
+        <span className="class-info">
+          {scheduledDate.toLocaleString()} — (Mentee Info: )
+        </span>
+        <button className="reschedule-btn">Reschedule</button>
+      </li>
+    ))}
+  </ul>
+</div>
+
     </div>
   );
 };

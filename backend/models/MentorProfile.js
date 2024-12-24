@@ -22,12 +22,12 @@ const mentorProfileSchema = new mongoose.Schema({
   highestDegree: {
     type: String,
     required: true,
-    enum: ['Bachelors', 'Masters', 'PhD', 'Diploma']
+    enum: ['Bachelors', 'Masters', 'Doctorate', 'Diploma', 'Certification', 'Associate']
   },
   subjectExpertise: {
     type: String,
     required: true,
-    enum: ['Mathematics', 'Physics', 'Chemistry', 'Biology', 'Computer Science', 'Literature', 'History', 'Geography']
+    enum:['Mathematics', 'Physics', 'Chemistry', 'Biology', 'Computer Science', 'Literature', 'History', 'Geography']
   },
   institute: {
     type: String,

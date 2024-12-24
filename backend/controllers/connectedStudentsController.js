@@ -19,7 +19,7 @@ exports.getConnectedStudents = async (req, res) => {
 
     res.status(200).json({ students });
   } catch (error) {
-    console.error('Error fetching connected students:', error);
-    res.status(500).json({ message: 'Error fetching connected students', error: error.message });
+    console.error('Error fetching connected Mentee:', error);
+    res.status(500).json({ message: 'Error fetching connected Mentee', error: error.message });
   }
 };
