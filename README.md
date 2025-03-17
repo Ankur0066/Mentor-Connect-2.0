@@ -10,7 +10,7 @@
 
 </h1>
 
-<h4 align="center">An on-demand fuel delivery app with panels for Admin, User, and Fuel Station Owner for seamless ordering and management. <a href="https://fuel-delivey-app.vercel.app/" target="_blank">Vercel-link</a>.</h4>
+<h4 align="center">**Mentor Connect** is a dynamic, one-stop platform designed to bridge the gap between mentors and mentees across diverse industries. It enables seamless, real-time video mentoring using **WebRTC** and simplifies scheduling with **Calendly integration** for hassle-free booking and rescheduling. The platform supports goal setting, progress tracking, and feedback to foster meaningful, growth-oriented connections. Whether for career guidance, skill development, or professional networking, Mentor Connect empowers individuals to connect, learn, and grow together. <a href="https://mentor-connect-2-0.vercel.app/" target="_blank">Vercel-link</a>.</h4>
 
 <p align="center">
   <a href="https://badge.fury.io/js/electron-markdownify">
@@ -121,7 +121,7 @@ This software uses the following open source packages:
 
 ## Related
 The Project is Live on vercel :
-https://fuel-delivey-app.vercel.app/
+https://mentor-connect-2-0.vercel.app/
 
 ## Support
 
@@ -140,6 +140,6 @@ MIT
 
 ---
 
-> [Portfolio](https://ankur-tiwari-portfolio-qn6d.vercel.app/) &nbsp;&middot;&nbsp;
+> [Let's Connect](https://ankur-tiwari-portfolio-qn6d.vercel.app/) &nbsp;&middot;&nbsp;
 > GitHub [@ankur0066](https://github.com/Ankur0066) &nbsp;&middot;&nbsp;
 
