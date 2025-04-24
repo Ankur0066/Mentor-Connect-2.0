@@ -1,0 +1,197 @@
+/* auth.css */
+:root {
+  --primary-color: #3498db;
+  /* --primary-dark: #2980b9; */
+  --bg-dark: white;
+  --bg-light: #1e1e1e;
+  /* --text-light: #ffffff; */
+  --text-muted: #bbb;
+}
+
+body {
+  background-color: white;
+  /* color: var(--text-light); */
+  font-family: Arial, sans-serif;
+}
+
+.auth-page {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+
+  align-items: flex-start;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.auth-container {
+  flex: 1;
+  max-width: 500px;
+  padding-left: 30px;
+  padding: 20px;
+  background-color: gray;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.auth-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+s .auth-form {
+  display: flex s;
+  background-color: lightgrey;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+.form-group {
+  /* background-color: red; */
+  color: black !important;
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem !important;
+}
+
+.form-group label {
+  /* background-color: red; */
+  margin-bottom: 0.5rem;
+  color: black !important;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.5rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  /* background-color: gray; */
+  color: black;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: black;
+}
+
+.btn-primary {
+  padding: 0.75rem;
+  background-color: var(--primary-color);
+  justify-content: center !important;
+  text-align: center !important;
+  color: var(--text-light);
+  border: solid 2px black;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: lightblue !important;
+  color: black !important;
+}
+
+.auth-footer {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: black;
+}
+
+/* ASIDE CONTAINER CSS */
+
+.aside-container {
+  flex: 1;
+  max-height: 100%;
+
+  max-width: 100%;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-right: 2%;
+  background-color: #fff;
+  border-radius: 3rem solid !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.aside-header {
+  background-color: white !important;
+  border: solid 2px black;
+  color: black !important;
+  text-align: center;
+  padding-top: 1px;
+  border-radius: 1rem;
+}
+.auth-link {
+  color: blue !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.auth-link:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+.error-message {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* TESTIMONAL */
+
+.testimonials {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonials h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Quote div styles */
+.quote {
+  border: 1rem solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.quote p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.quote .author {
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: right;
+  font-style: italic;
+}
+
+/* LOGIN STYLES
+ */
+.login-aside {
+  background-color: white;
+  border: solid 1.5px black;
+  color: black !important;
+  text-align: center;
+  margin-right: 15%;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
