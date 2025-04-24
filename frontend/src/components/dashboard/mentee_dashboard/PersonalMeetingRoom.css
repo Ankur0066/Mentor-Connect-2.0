@@ -1,0 +1,80 @@
+.meeting-room-card {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+  
+  .meeting-room-header {
+    padding: 16px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .meeting-room-header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .meeting-room-body {
+    padding: 16px;
+  }
+  
+  .info-row {
+    display: flex;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  
+  .info-label {
+    width: 100px;
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .info-value {
+    flex: 1;
+    color: #333;
+    word-break: break-all;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .start-meeting-btn,
+  .copy-invitation-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    flex: 1;
+  }
+  
+  .start-meeting-btn {
+    background-color: #0e71eb;
+    color: white;
+  }
+  
+  .start-meeting-btn:hover {
+    background-color: #0c65d1;
+  }
+  
+  .copy-invitation-btn {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .copy-invitation-btn:hover {
+    background-color: #e0e0e0;
+  }

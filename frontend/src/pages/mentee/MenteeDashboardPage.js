@@ -1,7 +1,19 @@
 import React, { useContext } from 'react';
 import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
-import { FaCalendar, FaUsers, FaBell, FaUser, FaChartBar, FaSignOutAlt, FaEnvelope, FaVideo } from 'react-icons/fa';
+import {  FaChalkboardTeacher } from 'react-icons/fa';
+import {
+  FaCalendar,
+  FaUsers,
+  FaBell,
+  FaUser,
+  FaChartBar,
+  FaSignOutAlt,
+  FaEnvelope,
+  FaHistory,
+  FaDoorOpen,
+  FaVideo
+} from 'react-icons/fa';
 import '../../styles/mentee_dashboard/MenteeDashboard.css';
 
 const MenteeDashboardPage = () => {
@@ -21,7 +33,13 @@ const MenteeDashboardPage = () => {
     { name: 'Profile', icon: <FaUser />, path: '/mentee/dashboard/userprofile' },
     { name: 'Teachers', icon: <FaUsers />, path: '/mentee/dashboard/teachers' },
     { name: 'Messages', icon: <FaEnvelope />, path: '/mentee/dashboard/messages' },
-    {name:'Classes', path:'classes'}
+    { name: 'Classes', icon: <FaChalkboardTeacher />, path:'classes'},
+    
+    
+    { name: 'Previous', icon: <FaHistory />, path: '/mentee/dashboard/previous' },
+    { name: 'Recording', icon: <FaVideo />, path: '/mentee/dashboard/recorder' },
+    { name: 'Personal Room', icon: <FaDoorOpen />, path: '/mentee/dashboard/personal-room' },
+  
   ];
 
   const isActive = (path) => {

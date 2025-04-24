@@ -1,6 +1,6 @@
 import React from 'react';
 import InterestedTeachers from './InterestedTeachers';
-import '../../../styles/mentee_dashboard/MenteeDashboard.css'; // Make sure to create this CSS file
+import '../../../styles/mentee_dashboard/MenteeDashboard.css'; 
 
 const Stats = () => {
   return (
