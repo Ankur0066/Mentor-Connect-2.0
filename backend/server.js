@@ -27,7 +27,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: process.env.FRONTEND_URL || "http://localhost:3000",
     methods: ["GET", "POST"]
   }
 });
@@ -52,6 +52,9 @@ mongoose.connect(process.env.MONGODB_URI, {
 
 // Routes
 
+app.get('/', (req, res) => {
+  res.send('Backend is working!');
+});
 
 // Add this line where you're setting up your routes
 app.use('/api/mentee', menteeScheduledClassesRoutes);
